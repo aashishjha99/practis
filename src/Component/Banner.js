@@ -196,7 +196,7 @@ export default function Banner() {
       {/* last header section */}
 
       <Container maxW="container.xl" mt="20">
-        <Grid templateColumns="repeat(2,1fr)" gap={6}>
+        <Grid templateColumns="repeat(2,1fr)" gap={8}>
           <Box>
             <Heading as="h3" size="lg" mb="7">
               What You Want To Do ?
@@ -272,7 +272,110 @@ export default function Banner() {
               <Box fontWeight="black">Search</Box>
             </Button>
           </Box>
-          <Box>JJJ</Box>
+          <Box>
+            <Box>
+              <Heading
+                display={{
+                  sm: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                  base: "none",
+                }}
+                as="h3"
+                size="lg"
+                mb="7"
+              >
+                What is happening ?
+              </Heading>
+              <Box display="flex" flexWrap="wrap" justifyContent="flex-start">
+                <Badge
+                  borderRadius="3xl"
+                  px="5"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  Starting Soon
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px="5"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  Today
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px="5"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  Tommorow
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px="5"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  This Week
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px="5"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  Online
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px="5"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  In person
+                </Badge>
+                <Badge
+                  borderRadius="3xl"
+                  px="4"
+                  py="2"
+                  mr="4"
+                  mb="4"
+                  textTransform="normal"
+                  color="#ffffff"
+                  bg="teal"
+                >
+                  Trending near you
+                </Badge>
+              </Box>
+            </Box>
+          </Box>
         </Grid>
       </Container>
     </>
