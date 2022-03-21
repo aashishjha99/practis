@@ -24,7 +24,16 @@ function itworks() {
             Meet new people who shares your interest through online and
             in-person events.It's free to create an account
           </Box>
-          <Grid templateColumns="repeat(3,1fr)" gap="6">
+          <Grid
+            templateColumns={{
+              sm: "repeat(1,1fr)",
+              md: "repeat(2,1fr)",
+              lg: "repeat(2,1fr)",
+              xl: "repeat(2,1fr)",
+              base: "repeat(1,1fr)",
+            }}
+            gap="6"
+          >
             <Box mx="auto" align="center">
               <Image w="100%" boxSize="160px" src={handsUp} alt="brand" />
 

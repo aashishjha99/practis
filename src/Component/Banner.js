@@ -46,7 +46,18 @@ export default function Banner() {
       {/* main punch line */}
       <Box>
         <Container maxWidth="container.xl">
-          <Box d="flex" alignItems="center" flexDirection="row" py="20">
+          <Box
+            d="flex"
+            alignItems="center"
+            flexDirection={{
+              sm: "column",
+              md: "row",
+              lg: "row",
+              xl: "row",
+              base: "column",
+            }}
+            py="20"
+          >
             <Box mr="9">
               <Heading as="h1" size="2xl">
                 <Box fontWeight="Black">
@@ -71,11 +82,19 @@ export default function Banner() {
       {/* three boxes */}
 
       <Container maxW="container.xl" mt="10">
-        <Grid templateColumns="repeat(3,1fr)">
+        <Grid
+          templateColumns={{
+            sm: "repeat(1,1fr)",
+            md: "repeat(2,1fr)",
+            lg: "repeat(2,1fr)",
+            xl: "repeat(2,1fr)",
+            base: "repeat(1,1fr)",
+          }}
+        >
           <Box>
             <Image w="100%" mr="2" borderRadius="lg" src={Cat_1} />
             <Button colorScheme="teal" variant="link" mt="5">
-              Explore the outdoor
+              Make new friends
               <Image w="100%" ml="2" src={rightArrow} alt="right arrow" />
             </Button>
           </Box>
@@ -89,7 +108,7 @@ export default function Banner() {
           <Box>
             <Image w="100%" ml="6" borderRadius="lg" src={Cat_3} />
             <Button colorScheme="teal" variant="link" mt="5">
-              Explore the outdoor
+              Connect over tech
               <Image w="100%" ml="2" src={rightArrow} alt="right arrow" />
             </Button>
           </Box>
@@ -196,12 +215,32 @@ export default function Banner() {
       {/* last header section */}
 
       <Container maxW="container.xl" mt="20">
-        <Grid templateColumns="repeat(2,1fr)" gap={8}>
+        <Grid
+          templateColumns={{
+            sm: "repeat(1,1fr)",
+            md: "repeat(2,1fr)",
+            lg: "repeat(2,1fr)",
+            xl: "repeat(2,1fr)",
+            base: "repeat(1,1fr)",
+          }}
+          gap={8}
+        >
           <Box>
             <Heading as="h3" size="lg" mb="7">
               What You Want To Do ?
             </Heading>
-            <Box d="flex" alignItems="center" flexDirection="row" w="100%">
+            <Box
+              d="flex"
+              alignItems="center"
+              flexDirection={{
+                sm: "column",
+                md: "row",
+                lg: "row",
+                xl: "row",
+                base: "column",
+              }}
+              w="100%"
+            >
               <Box flexBasis="50%" w="100%" mr="2">
                 <FormControl>
                   <Box pos="relative">
@@ -229,7 +268,23 @@ export default function Banner() {
                   </Box>
                 </FormControl>
               </Box>
-              <Box flexBasis="50%" w="100%" mr="2">
+              <Box
+                flexBasis={{
+                  sm: "100%",
+                  md: "50%",
+                  lg: "50%",
+                  xl: "50%",
+                  base: "100%",
+                }}
+                w="100%"
+                mr={{
+                  sm: "0",
+                  md: "2",
+                  lg: "2",
+                  xl: "2",
+                  base: "0",
+                }}
+              >
                 <FormControl>
                   <Box pos="relative">
                     <Input
